@@ -38,9 +38,7 @@ load_events(client);
 client.login(process.env.TOKEN);
 
 console.log(chalk.green("[MONGOOSE] Connecting to database..."));
-connect(process.env.MONGODB, {
-    dbName: "development",
-})
+connect(process.env.MONGODB)
     .then(() => {
         console.log(chalk.green("[MONGOOSE] Connected to database."));
     })
