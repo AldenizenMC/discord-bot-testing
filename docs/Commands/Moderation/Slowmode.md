@@ -1,0 +1,33 @@
+- Description: Sets the slowmode for current channel
+
+- Usage: `/slowmode <set|disable>`
+
+- Set
+	- **Description**: Sets the slowmode for current channel
+	- **Usage**: /slowmode set <rate*: [[String]]> <reason: [[String]]> <duration: [[String]]>
+	- **Parameters**:
+		- **rate**:
+			- **Type**: [[String]]
+			- **Description**: The rate at which the user can send a new message (5s, 1m, 30m, etc.)
+			- **Required**: Yes
+		- **reason**:
+			- **Type**: [[String]]
+			- **Description**: Reason for enabling slowmode
+			- **Required**: No
+		- **duration**:
+			- **Type**: [[String]]
+			- **Description**: Duration for the slowmode (5s, 1m, 30m, etc.), after which it will disable itself.
+			- **Required**: No
+
+- Disable
+	- **Description**: Disables the slowmode for current channel
+	- **Usage**: /slowmode disable <reason: [[String]]> <duration: [[String]]>
+	- **Parameters**:
+		- **reason**:
+			- **Type**: [[String]]
+			- **Description**: Reason for disabling slowmode
+			- **Required**: No
+		- **duration**:
+			- **Type**: [[String]]
+			- **Description**: Duration for the disabled slowmode (5s, 1m, 30m, etc.), after which it will enable itself.
+			- **Required**: No
