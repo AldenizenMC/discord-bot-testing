@@ -13,5 +13,6 @@ module.exports = {
         );
 
         load_commands(client, true);
+        if (process.argv[2] == "--exit-on-ready") procses.exit(0);
     },
 };

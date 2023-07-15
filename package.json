@@ -3,7 +3,7 @@
         "js": "powershell -noexit \"&\"\".\\scripts\\build.ps1\\\"\"; cd dist; node --enable-source-maps index.js; cd ..\"",
         "ts": "cd src\\ && ts-node . && cd ..",
         "test:compile": "./scripts/build.sh",
-        "test:run": "cd dist/ && node --enable-source-maps index.js"
+        "test:run": "cd dist/ && node --enable-source-maps index.js --exit-on-ready"
     },
     "dependencies": {
         "@discordjs/opus": "^0.8.0",
