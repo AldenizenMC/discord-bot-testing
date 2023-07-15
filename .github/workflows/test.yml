@@ -1,6 +1,6 @@
 name: test
 
-on: [push, pull_request]
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
     test:
@@ -23,3 +23,7 @@ jobs:
 
             - name: Run
               run: npm run test:run
+              env:
+                  TOKEN: ${{ secrets.TOKEN }}
+                  MONGODB: ${{ secrets.MONGODB }}
+                  ANTICRASH: ${{ secrets.ANTICRASH }}
