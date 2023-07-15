@@ -22,7 +22,8 @@ const client = new Client({
     ],
     partials: [User, Message, GuildMember, ThreadMember],
 });
-anticrash(client, process.env.ANTICRASH);
+
+if (process.env.ANTICRASH) anticrash(client, process.env.ANTICRASH);
 
 // Configs (objects)
 client.config = config;

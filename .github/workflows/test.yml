@@ -29,7 +29,3 @@ jobs:
 
             - name: Run
               run: npm run test:run
-              env:
-                  TOKEN: ${{ secrets.TOKEN }}
-                  MONGODB: ${{ secrets.MONGODB }}
-                  ANTICRASH: ${{ secrets.ANTICRASH }}
